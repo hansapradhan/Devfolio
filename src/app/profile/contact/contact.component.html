@@ -1,0 +1,79 @@
+     <!-- ======= Contact Section ======= -->
+     <div id="contact" id="contactBackgroundImage" class="contact section paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/images/overlay-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="title-box-2">
+                      <div class="h4 text-center mb-4 title">Contact Me</div>
+                    </div>
+                    <div>
+                      <form name="form" (ngSubmit)="onSubmit()" #contactForm="ngForm" novalidate >
+                        <div class="row">
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" name="name" #name="ngModel"  class="form-control" [class.is-invalid]="name.invalid && name.touched" id="name" placeholder="Your Name" [(ngModel)] = "contactModel.name" required>
+                            </div>
+                            <small class="text-danger" [class.d-none]="name.valid || name.untouched">Name is required</small>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="email" class="form-control" #email="ngModel" name="email" id="email" [class.is-invalid]="email.invalid && email.touched" placeholder="Your Email"  pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" [(ngModel)] = "contactModel.email" required>
+                            </div>
+                            <div *ngIf="email.errors && (email.invalid && email.touched)">
+                              <small class="text-danger" *ngIf="email.errors['required']">Email is required</small>
+                              <small class="text-danger" *ngIf="email.errors['pattern']">Email is not proper</small>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="subject" #subject="ngModel" id="subject" [class.is-invalid]="subject.invalid && subject.touched" placeholder="Subject" [(ngModel)] = "contactModel.subject" required>
+                            </div>
+                            <small class="text-danger" [class.d-none]="subject.valid || subject.untouched">Subject is required</small>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <textarea class="form-control" name="message" #message="ngModel" rows="5" placeholder="Message" [class.is-invalid]="message.invalid && message.touched" [(ngModel)] = "contactModel.message" required></textarea>
+                            </div>
+                            <small class="text-danger" [class.d-none]="message.valid || message.untouched">Message is required</small>
+                          </div>
+                          <div class="col-md-12 text-center my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                          </div>
+                          <div class="col-md-12 text-center">
+                            <button type="submit" [disabled]="contactForm.form.invalid" class="button button-a button-big button-rouded">Send Message</button>
+                          </div>
+                        </div>
+                        <input type="hidden" name="_gotcha"><!-- use this to prevent spam -->
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <br>
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">
+                        Get in Touch
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead">
+                        If you have any queries, oppurtunities or suggestions. Please feel free to contact me by filling out this form or connecting with me through social media. Your inputs and advice are truly appreciated.
+                        Would be happy to connect with you. <i class="uil uil-smile"></i>
+                     </p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Contact Section -->
+
