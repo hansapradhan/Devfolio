@@ -134,7 +134,7 @@ $('a.smooth-scroll')
 
 /*==================== DARK LIGHT THEME ====================*/ 
 window.onload = function(){
-const themeButton = document.getElementById('theme-button')
+const themeButton = document.getElementById('toggle_checkbox')
 const mainDivTag = document.getElementById("mainDiv");
 const homeBackgroundImage = document.getElementById("homeBackground")
 const contactBackgroundImage = document.getElementById("contactBackgroundImage")
@@ -168,12 +168,12 @@ themeButton.addEventListener('click', () => {
     if (localStorage.getItem('selected-theme') === 'dark') {
       homeBackgroundImage.style.backgroundImage = "url('assets/images/darkmodeHome.jpg')"
       contactBackgroundImage.style.backgroundImage = "url(assets/images/darkmodecontact.jpg)" 
-      document.getElementById('theme-button').innerHTML = 'DARK THEME';
+      document.getElementById('toggle_checkbox').innerHTML = 'DARK THEME';
     }
     else{
       homeBackgroundImage.style.backgroundImage = "url('assets/images/work-4.jpg')"
       contactBackgroundImage.style.backgroundImage = "url(assets/images/overlay-bg.jpg)"
-      document.getElementById('theme-button').innerHTML = 'LIGHT THEME';
+      document.getElementById('toggle_checkbox').innerHTML = 'LIGHT THEME';
     }
 })
 }
