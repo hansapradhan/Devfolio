@@ -134,26 +134,6 @@ a {
 	margin: 1.2em 0;
 }
 
-// .project-skill,
-// .project-link {
-// 	display: flex;
-// 	justify-content: center;
-// 	flex-wrap: wrap;
-// }
-
-// .project-skill {
-// 	margin: 0 auto;
-// }
-
-// .project-skill li {
-// 	font-size: 0.8rem;
-// 	font-weight: 700;
-// 	margin: 0.3em 0.2em;
-// 	padding: 0.4em 0.6em;
-// 	border-radius: 5em;
-// 	background-color: var(--primary-light);
-// 	color: var(--primary-alt);
-// }
 
 .project-link {
 	margin-top: 1.2em;
@@ -239,27 +219,6 @@ a {
      4. components
    ================= */
 
-/* buttons */
-
-.btn {
-	display: inline-block;
-	border-radius: 5em;
-	font-size: 0.8rem;
-	font-weight: 600;
-	transition: transform 0.2s ease-in-out;
-	padding: 1em 1.6em;
-	background-color: var(--primary);
-	color: var(--bg);
-}
-
-.btn:hover {
-	background-color: var(--primary-alt);
-}
-
-.btn:active {
-	transform: translateY(-0.4em);
-}
-
 /* icons */
 
 .icon-normal,
@@ -273,72 +232,6 @@ a {
 	cursor: pointer;
 	border-radius: 50%;
 	font-size: 1.2rem;
-}
-
-
-
-// .icon-normal::after,
-// .icon-border::after {
-// 	content: '';
-// 	position: absolute;
-// 	width: 0%;
-// 	height: 0%;
-// 	z-index: -1;
-// 	background-color: var(--primary);
-// 	border-radius: 50%;
-// 	transition: all 0.25s ease-in-out;
-// }
-
-// .icon-normal:hover::after,
-// .icon-border:hover::after {
-// 	width: 100%;
-// 	height: 100%;
-// 	border: 0.2em solid var(--primary);
-// }
-
-// .icon-normal {
-// 	width: 1.6em;
-// 	height: 1.6em;
-// 	color: var(--fg-alt);
-// }
-
-// .icon-border {
-// 	width: 2.2em;
-// 	height: 2.2em;
-// 	color: var(--primary);
-// 	border: 0.15em solid var(--primary);
-// }
-
-/* icons */
-
-.scroll-container {
-	display: flex;
-	justify-content: flex-end;
-}
-
-.scroll-up {
-	display: none;
-	position: fixed;
-	font-size: 0.9rem;
-	bottom: 3em;
-	right: 2em;
-	font-weight: 600;
-	transition: transform 0.2s ease-in-out;
-}
-
-.scroll-up:active {
-	transform: translateY(0.4em);
-}
-
-.scroll-up a {
-	background-color: var(--primary);
-	padding: 0.9em 1.2em;
-	color: var(--bg);
-	border-radius: 50%;
-}
-
-.scroll-up a:hover {
-	background-color: var(--primary);
 }
 
 @media (max-width: 1000px) {
