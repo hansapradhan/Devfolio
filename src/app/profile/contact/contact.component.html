@@ -42,16 +42,29 @@
                             <small class="text-danger" [class.d-none]="message.valid || message.untouched">Message is required</small>
                           </div>
                           <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
+                            <!-- <div class="loading">Loading</div>
                             <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div> -->
+                            <div class="alert alert-success alert-dismissible fade show" id="success" role="alert" style="display: none;" [class.d-block]="isFormSuccessful=='success'">
+                              Your message has been sent. Please click on the refresh button to send another request. Thank you!
+                              <button type="button" class="close" onlcick="isFormSuccessful='null'" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="alert alert-danger alert-dismissible fade show alert-dismissible fade show" id="failure" role="alert" style="display: none;" [class.d-block]="isFormSuccessful=='success'">
+                              Your message Could not be sent! You can click on the refresh button to send another response. Alternatively you can mail at <a style="color:aquamarine;"href="mailto:pradhan.hansa@gmail.com"><b>pradhan.hansa@gmail.com</b></a>
+                              <button type="button" class="close" data-dismiss="alert" onlcick="isFormSuccessful='null'" aria-label="Close" >
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
                           </div>
                           <div class="col-md-12 text-center">
-                            <button type="submit" [disabled]="contactForm.form.invalid" class="button button-a button-big button-rouded">Send Message</button>
+                            <button type="submit" [disabled]="contactForm.form.invalid || submitted" class="button button-a button-big button-rouded" [class.d-none]="submitted">Send Message</button>  
                           </div>
                         </div>
                         <input type="hidden" name="_gotcha"><!-- use this to prevent spam -->
                       </form>
+                      <button class="button button-a button-big button-rouded" (click)="onReset()" [class.d-none]="!submitted">Refresh</button>
                     </div>
                   </div>
                   <div class="col-md-6">
