@@ -11,6 +11,7 @@ import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from
 })
   export class ContactComponent implements OnInit {
     isFormSuccessful = "null";
+    isMobileDevice =false;
     // model: any = {};
     //Model for the form
     contactModel = new ContactFormModel("","","","");
@@ -30,6 +31,17 @@ import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from
     }
   
     ngOnInit() {
+           /* Storing user's device details in a variable*/
+           let details = navigator.userAgent;
+      
+           /* Creating a regular expression
+           containing some mobile devices keywords
+           to search it in details string*/
+           let regexp = /android|iphone|kindle|ipad/i;
+           
+           /* Using test() method to search regexp in details
+           it returns boolean value*/
+           this.isMobileDevice = regexp.test(details);
       this.contactform = this.formBuilder.group(
         {
           name: ['', Validators.required],
@@ -92,5 +104,6 @@ import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from
     onReset(): void {
       this.submitted = false;
       this.contactform.reset();
+      location.reload();
     }
 }

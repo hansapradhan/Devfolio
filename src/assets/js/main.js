@@ -1,7 +1,22 @@
 // Add your javascript here
 // Don't forget to add it into respective layouts where this js file is needed
 $(document).ready(function () {
-
+  $(document).click(function (event) {
+    var clickover = $(event.target);
+    // var _opened = $(".navbar-toggler").hasClass("nav-open");
+    // if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+    //     $("button.navbar-toggler").click();
+    // }
+    if (nowuiKit.misc.navbar_menu_visible == 1 && (!clickover.hasClass("navbar-toggler-bar") && !clickover.hasClass("navbar-toggler") )) {
+      // $('html').removeClass('nav-open');
+      // nowuiKit.misc.navbar_menu_visible = 0;
+      // $('#bodyClick').remove();
+      // setTimeout(function() {
+      //     $toggle.removeClass('toggled');
+      // }, 550);
+      $(".navbar-toggler").click();
+  }
+  });
   AOS.init( {
     // uncomment below for on-scroll animations to played only once
     // once: true
@@ -50,7 +65,13 @@ $(".hover-notify").velocity('stop', true).velocity("fadeOut");
 			}).mouseleave(function () {
 				 $('.hexactive').velocity('stop', true).velocity('reverse').removeClass('hexactive');
 			});
+
+
+
+
 });
+
+
 
 // $(document).ready(function() {
 //   AOS.init( {
@@ -177,4 +198,5 @@ themeButton.addEventListener('click', () => {
     }
 })
 }
+
 

@@ -5599,6 +5599,42 @@ margin-left: 0px;
   line-height: 1.4;
 }
 
+.tooltipbutton {
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted black; */
+}
+
+.tooltipbutton .tooltipbuttontext {
+  visibility: hidden;
+  width: 150px;
+  background-color: var(--first-color);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltipbutton .tooltipbuttontext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent var(--first-color) transparent;
+}
+
+.tooltipbutton:hover .tooltipbuttontext {
+  visibility: visible;
+}
+
 
 
 

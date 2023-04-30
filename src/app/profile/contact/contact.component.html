@@ -58,13 +58,20 @@
                               </button>
                             </div>
                           </div>
-                          <div class="col-md-12 text-center">
-                            <button type="submit" [disabled]="contactForm.form.invalid || submitted" class="button button-a button-big button-rouded" [class.d-none]="submitted">Send Message</button>  
+                          <!-- <p class="Lead" [class.d-none]="!isMobileDevice ||submitted || !contactForm.form.invalid">This is a test</p> -->
+                          <div class="col-md-12 text-center tooltipbutton">
+                            <button type="submit" id="SendMessage" [disabled]="contactForm.form.invalid || submitted" class="button button-a button-big button-rouded button-68 tooltipbutton" [class.d-none]="submitted">
+                              Send Message <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            </button>
+                              <span class="tooltipbuttontext" [class.d-none]="submitted || !contactForm.form.invalid" > Button is disabled. Please fill out all the details first. </span>
+                              <span class="tooltipbuttontext" [class.d-none]="submitted || contactForm.form.invalid" > Please click this button to submit the form. </span>
                           </div>
                         </div>
+                        <br>
+                        <br>
                         <input type="hidden" name="_gotcha"><!-- use this to prevent spam -->
                       </form>
-                      <button class="button button-a button-big button-rouded" (click)="onReset()" [class.d-none]="!submitted">Refresh</button>
+                      <button role="button" class="button button-a button-big button-rouded button-68" (click)="onReset()" [class.d-none]="!submitted">Refresh <i class="fa fa-refresh" aria-hidden="true"></i></button>
                     </div>
                   </div>
                   <div class="col-md-6">
