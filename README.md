@@ -6,8 +6,6 @@
 
 ## Badges
 
-Add badges from somewhere like: [shields.io](https://shields.io/)
-
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
@@ -28,7 +26,9 @@ Add badges from somewhere like: [shields.io](https://shields.io/)
 
 **Appliations:** VisualStudioCode, Git
 
+## Screenshots
 
+![PortfolioProject](https://github.com/hansapradhan/hansapradhan.github.io/assets/66682092/2507ae8c-8a3d-4e67-96a4-da983a248fa4)
 
 ## Authors
 
@@ -44,7 +44,5 @@ Give a ⭐️ if this project helped you!
 Please adhere to this project's `code of conduct`.
 
 
-## Screenshots
 
-![PortfolioProject](https://github.com/hansapradhan/hansapradhan.github.io/assets/66682092/2507ae8c-8a3d-4e67-96a4-da983a248fa4)
 
