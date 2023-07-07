@@ -1,7 +1,7 @@
 
-# Project Title
+# Devfolio
 
-A brief description of what this project does and who it's for
+🚀 Software Developer Portfolio Template that helps you showcase your work and skills as a software developer.
 
 
 ## Badges
