@@ -1,27 +1,51 @@
-# PersonalPortfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
+# Personal Portfolio
 
-## Development server
+🚀 Software Developer Portfolio Template that helps you showcase your work and skills as a software developer.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Badges
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Add badges from somewhere like: [shields.io](https://shields.io/)
 
-## Build
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Features
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Light/dark mode toggle
+- Compatible with all devices
+- Made using AngularJs
+- Has Experience, Portfolio, Skills and Contact Me Section
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Tech Stack
+
+**Client:** Angular, CSS, SASS, JavaScript, bootstrap
+
+**Appliations:** VisualStudioCode, Git
+
+
+
+## Authors
+
+- [@hansapradhan](https://www.github.com/hansapradhan)
+
+
+## ⭐️ Project assistance
+
+Contributions are always welcome! Please create a PR to contribute.
+
+Give a ⭐️ if this project helped you!
+
+Please adhere to this project's `code of conduct`.
+
+
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
